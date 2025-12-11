@@ -145,8 +145,8 @@ Main App
 
 A lightweight, dependency-free PWA shell is included to visualize the Play with Data experience:
 
-1. Serve the project root locally (for example, `python -m http.server 4173`).
-2. Open `http://localhost:4173` in a modern browser.
+1. Run `./start.sh` (or `PORT=1234 ./start.sh` if you prefer a different port). This uses Python's built-in HTTP server.
+2. Open `http://localhost:4173` (or your chosen port) in a modern browser.
 3. Toggle between tabs in the bottom navigation to explore the dashboard, challenge hub, puzzle lab, market pulse, and profile views.
 
 Offline caching is handled by `sw.js`, and PWA metadata lives in `manifest.webmanifest`. Lightweight SVG icons (so diffs stay readable in git) are available under `icons/`.
