@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play with Data</title>
+    <meta name="theme-color" content="#0A0E27" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <button class="menu-button" aria-label="Open menu">☰</button>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">∑</div>
+        <div>
+          <p class="eyebrow">Play with Data</p>
+          <p class="title">SAGE Mentor Console</p>
+        </div>
+      </div>
+      <button class="cta" aria-label="Start a challenge">Start</button>
+    </header>
+
+    <main id="app" class="app-shell" aria-live="polite"></main>
+
+    <nav class="bottom-nav" aria-label="Primary">
+      <button data-view="dashboard" aria-pressed="true">🏠 <span>Home</span></button>
+      <button data-view="challenges">🎯 <span>Challenges</span></button>
+      <button data-view="puzzleLab">🧪 <span>Practice</span></button>
+      <button data-view="marketPulse">📈 <span>Insights</span></button>
+      <button data-view="profile">👤 <span>Profile</span></button>
+    </nav>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
